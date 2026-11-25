@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Controllers;
+
+class About extends BaseController
+{
+    public function index(): string
+    {
+        return view('pages/about', [
+            'title'  => lang('Site.brand') . ' — ' . lang('Site.about'),
+            'active' => 'about',
+        ]);
+    }
+}
